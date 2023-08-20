@@ -16,8 +16,6 @@ build:
 
 deploy:
   stage: deploy
-  only:
-    - main  
   script:
     - npm install -g vercel  
     - vercel --confirm --prod  
